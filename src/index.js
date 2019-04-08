@@ -9,4 +9,4 @@ function App() {
   )
 }
 
-ReactDOM.reander(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
