@@ -6,7 +6,7 @@ module.exports = {
     devServer: {
       contentBase: "./dist"
     },
-    devTools:"inline-source-maps",
+    devtool:"inline-source-maps",
     rules: [
       {
         test: /\.js$/,
@@ -22,7 +22,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(["./dist"]),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: "./src/index.html" })
   ]
 }
