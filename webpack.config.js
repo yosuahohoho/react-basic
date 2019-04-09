@@ -3,10 +3,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   module: {
-    devServer: {
-      contentBase: "./dist"
-    },
-    devtool:"inline-source-maps",
     rules: [
       {
         test: /\.js$/,
@@ -21,6 +17,10 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    contentBase: "./dist"
+  },
+  devtool: "inline-source-maps",
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: "./src/index.html" })
