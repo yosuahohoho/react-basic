@@ -6,6 +6,7 @@ devDependencies:
   '@babel/preset-env': 7.4.3
   '@babel/preset-react': 7.0.0
   babel-loader: 8.0.5
+  clean-webpack-plugin: 2.0.1
   css-loader: 2.1.1
   html-webpack-plugin: 3.2.0
   style-loader: 0.23.1
@@ -1363,6 +1364,16 @@ packages:
       node: '>= 4.0'
     resolution:
       integrity: sha512-4ZxI6dy4lrY6FHzfiy1aEOXgu4LIsW2MhwG0VBKdcoGoH/XLFgaHSdLTGr4O8Be6A8r3MOphEiI8Gc1n0ecf3g==
+  /clean-webpack-plugin/2.0.1:
+    dependencies:
+      del: 4.1.0
+    dev: true
+    engines:
+      node: '>=6.9.0'
+    peerDependencies:
+      webpack: '*'
+    resolution:
+      integrity: sha512-vway5pXGVd91bicwjaf8j188Al6VMf9R9Ekl6q0qeiaWStRsOOXuh4qtjX1UrUvmz5XevQVCdjBuzr4Tzsnpog==
   /cliui/4.1.0:
     dependencies:
       string-width: 2.1.1
@@ -1736,6 +1747,19 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-U+z2mf/LyzljdpGrE7rxYIGXZuU=
+  /del/4.1.0:
+    dependencies:
+      globby: 6.1.0
+      is-path-cwd: 2.0.0
+      is-path-in-cwd: 2.0.0
+      p-map: 2.1.0
+      pify: 4.0.1
+      rimraf: 2.6.3
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-C4kvKNlYrwXhKxz97BuohF8YoGgQ23Xm9lvoHmgT7JaPGprSEjk3+XFled74Yt/x0ZABUHg2D67covzAPUKx5Q==
   /depd/1.1.2:
     dev: true
     engines:
@@ -2794,6 +2818,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-0iXsIxMuie3Tj9p2dHLmLmXxEG0=
+  /is-path-cwd/2.0.0:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-m5dHHzpOXEiv18JEORttBO64UgTEypx99vCxQLjbBvGhOJxnTNglYoFXxwo6AbsQb79sqqycQEHv2hWkHZAijA==
   /is-path-in-cwd/1.0.1:
     dependencies:
       is-path-inside: 1.0.1
@@ -2802,6 +2832,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-FjV1RTW48E7CWM7eE/J2NJvAEEVektecDBVBE5Hh3nM1Jd0kvhHtX68Pr3xsDf857xt3Y4AkwVULK1Vku62aaQ==
+  /is-path-in-cwd/2.0.0:
+    dependencies:
+      is-path-inside: 1.0.1
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-6Vz5Gc9s/sDA3JBVu0FzWufm8xaBsqy1zn8Q6gmvGP6nSDMw78aS4poBNeatWjaRpTpxxLn1WOndAiOlk+qY8A==
   /is-path-inside/1.0.1:
     dependencies:
       path-is-inside: 1.0.2
@@ -3509,6 +3547,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-r6zKACMNhjPJMTl8KcFH4li//gkrXWfbD6feV8l6doRHlzljFWGJ2AP6iKaCJXyZmAUMOPtvbW7EXkbWO/pLEA==
+  /p-map/2.1.0:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-y3b8Kpd8OAN444hxfBbFfj1FY/RjtTd8tzYwhUqNYXx0fXx2iX4maP4Qr6qhIKbQXI02wTLAda4fYUbDagTUFw==
   /p-try/2.2.0:
     dev: true
     engines:
@@ -5051,6 +5095,7 @@ specifiers:
   '@babel/preset-env': ^7.4.3
   '@babel/preset-react': ^7.0.0
   babel-loader: ^8.0.5
+  clean-webpack-plugin: ^2.0.1
   css-loader: ^2.1.1
   html-webpack-plugin: ^3.2.0
   react: ^16.8.6

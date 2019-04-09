@@ -1,7 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   module: {
+    devServer: {
+      contentBase: "./dist"
+    },
     rules: [
       {
         test: /\.js$/,
@@ -17,6 +21,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(["./dist"]),
     new HtmlWebpackPlugin({ template: "./src/index.html" })
   ]
 }
