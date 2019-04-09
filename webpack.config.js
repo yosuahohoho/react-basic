@@ -6,6 +6,7 @@ module.exports = {
     devServer: {
       contentBase: "./dist"
     },
+    devTools:"inline-source-maps",
     rules: [
       {
         test: /\.js$/,
