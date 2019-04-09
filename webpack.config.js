@@ -1,3 +1,4 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -7,6 +8,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
+        include: path.resolve(__dirname, "src"),
         use: {
           loader: "babel-loader"
         }
