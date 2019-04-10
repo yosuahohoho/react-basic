@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <header>
+    <header className='container'>
       <h1>JSX incoming! prepare for the turbulence!</h1>
     </header>
   )

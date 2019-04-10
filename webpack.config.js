@@ -31,7 +31,8 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: './dist'
+    port: 3000,
+    stats: 'minimal'
   },
   devtool: 'inline-source-maps',
   plugins: [
