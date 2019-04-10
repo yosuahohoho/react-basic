@@ -1,10 +1,17 @@
 import React from 'react'
 
+import avatar from './../avataaars.png'
+
 function App() {
   return (
-    <header className='container'>
-      <h1>JSX incoming! prepare for the turbulence!</h1>
-    </header>
+    <main className='container'>
+      <section className='hero'>
+        <div className='avatar'>
+          <img src={avatar} alt='avatar' />
+        </div>
+        <h1>Hello React!</h1>
+      </section>
+    </main>
   )
 }
 
