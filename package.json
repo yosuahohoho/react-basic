@@ -1,7 +1,7 @@
 {
   "name": "react-basic",
   "version": "1.0.0",
-  "description": "Basic React app setup with Webpack",
+  "description": "Basic React app boilerplate with Webpack",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
