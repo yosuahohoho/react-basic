@@ -6,14 +6,15 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: '[name].[contenthash].js'
   },
   optimization: {
+    runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
-          name: 'vendor',
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
           chunks: 'all'
         }
       }
@@ -50,5 +51,4 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({ template: './src/index.html' })
   ],
-  stats: 'minimal'
 }
